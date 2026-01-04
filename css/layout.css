@@ -18,3 +18,60 @@ body {
 section {
   padding: var(--section-padding);
 }
+
+/*! Global typography settings */
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+/*! Large hero heading */
+
+h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 1.1;
+}
+
+/*! Section headings */
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 40px;
+}
+
+/*! Default paragraph style */
+
+p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+}
+
+/*! Remove default list styles */
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/*! Improve link hover behavior */
+
+a {
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/*! Center content slightly for better readability */
+
+section {
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
