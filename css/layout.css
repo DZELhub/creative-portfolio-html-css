@@ -75,3 +75,46 @@ section {
   flex-direction: column;
   gap: 24px;
 }
+
+/*//! -------------------- HERO SECTION -------------------- */
+
+.hero {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/** Hero background effect using pseudo-element */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(127, 0, 255, 0.25),
+    transparent 60%
+  );
+  z-index: -1;
+}
+
+/** Gradient text for main heading */
+
+.hero h1 {
+  background: linear-gradient(90deg, var(--accent), #e100ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/** Hero subtitle */
+
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 24px;
+  color: var(--text-muted);
+}
