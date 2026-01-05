@@ -135,9 +135,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions about this project, feel free to reach out:
 
-- 📧 Email: [your-email@example.com](mailto:your-email@example.com)
-- 💼 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- 🌐 Portfolio: [yourwebsite.com](https://yourwebsite.com)
+- 📧 Email: [binaycelalselim@gmail.com](mailto:your-email@example.com)
+- 💼 LinkedIn: [https://www.linkedin.com/in/dzelalbinay/](https://linkedin.com/in/yourprofile)
 
 ---
 
