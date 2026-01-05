@@ -74,3 +74,64 @@
 .skills li:hover {
   background: rgba(255, 255, 255, 0.08);
 }
+
+/*? ------------------- CONTACT SECTION ------------------ */
+
+.contact {
+  text-align: center;
+  padding-bottom: 160px;
+}
+
+/*! Contact Email Link */
+
+.contact a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-light);
+  position: relative;
+}
+
+/*! Underline hover effect */
+
+.contact a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition);
+}
+
+.contact a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/*? ----------------------- FOOTER ----------------------- */
+
+footer {
+  padding: 40px 8%;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/*? ------------------ Responsive Tweaks ----------------- */
+
+@media (max-width: 768px) {
+  /*! Reduce grid gap on mobile */
+  .projects-grid {
+    gap: 24px;
+  }
+
+  /*! Make contact email smaller on mobile */
+  .contact a {
+    font-size: 1.2rem;
+  }
+}

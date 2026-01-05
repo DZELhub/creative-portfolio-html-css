@@ -147,3 +147,26 @@ section {
   font-size: 1.1rem;
   max-width: 500;
 }
+
+/*? ---------------- RESPONSIVE BREAKPOINT --------------- */
+
+@media (max-width: 768px) {
+  /*! Reduce section padding on small screens */
+
+  section {
+    padding: 80px 6%;
+  }
+
+  /*! Center about content */
+
+  .about {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /*! Slightly reduce hero spacing */
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
