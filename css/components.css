@@ -1,0 +1,48 @@
+/*! PROJECT GRID */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 40px;
+}
+
+/*! PROJECT CARD */
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+/*! PROJECT IMAGE */
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*! OVERLAY LAYER */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 15, 15, 0.7);
+  display: grid;
+  place-content: center;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+/*! OVERLAY TEXT */
+
+.overlay h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/*! HOVER EFFECT */
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
